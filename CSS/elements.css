@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* This css file is for all Elements CSS */
+body {
+    font: bold 16px "Times Roman" sans-serif;
+    color: black;
+}
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #7AB;
+    border-radius: 5px;
+    border: 1px solid black;
+    gap: 10px;
+    padding: 10px;
+    grid-area: hh; 
+}
+/* To align search to right */
+header > #search {
+    margin-left: auto;
+}
+/* Links in header */
+a:link, a:visited {
+    background-color: #003;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    background-color: #116;
+    text-decoration: none;
+    color: white;
+}
+
+/* Footer CSS */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #7AB;
+    border-radius: 5px;
+    border: 1px solid black;
+    gap: 10px;
+    padding: 10px;
+    grid-area: ff; 
+}
+
+  
+  img {
+    border-radius: 5px;
+  }
