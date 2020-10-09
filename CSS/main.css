@@ -1,0 +1,58 @@
+@import "header.css";
+@import "content.css";
+@import "footer.css";
+
+/* The main CSS file */
+body {
+    font: bold 16px "Times New Roman", sans-serif;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,minmax(100px,auto));
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    grid-template-areas: 
+    "hh"
+    "tt"
+    "cc"
+    "ff";
+}
+/* Try to view on multiple devices */
+@media (min-width: 600px) and (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(4,minmax(100px,auto));
+        gap: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        grid-template-areas: 
+        "hh hh"
+        "tt tt"
+        "cc cc"
+        "ff ff";
+    }
+}
+
+@media (min-width: 901px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(4,minmax(100px,auto));
+        gap: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        grid-template-areas: 
+        "hh hh hh"
+        "tt tt tt"
+        "cc cc cc"
+        "ff ff ff";
+    }
+}  
