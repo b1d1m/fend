@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "header.css";
 @import "content.css";
 @import "footer.css";
@@ -8,6 +9,13 @@ body {
     color: black;
 }
 
+=======
+@charset "UTF-8";
+@import "elements.css";
+@import "classes.css";
+
+/* The main CSS file */
+>>>>>>> 5d1dcb4bd5d5e8b76a07e73af7c6ae90c0747884
 .container {
     display: grid;
     grid-template-columns: repeat(1,1fr);
