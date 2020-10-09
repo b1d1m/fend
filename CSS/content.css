@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS for Content */
+
+.content {
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(2,minmax(100px,auto));
+    grid-template-rows: repeat(1,minmax(100px,auto));
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    grid-area: cc;
+}
+
+/* Gallery inside Content */
+.gallery {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* For Gallery inside blogpost.html */
+.blogGallery {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* gboxes for articles inside gallery */
+.gboxes {
+    width: 40%;
+    font-size: 0.8em;
+    margin: 5px;
+    padding: 5px;
+    text-align: justify;
+}
+
+.qotFooter {
+    background-color: white;
+    border: none;
+}
+
+.social {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    margin-left: auto;
+}
+
+.social > h2 {
+    text-align: center;
+}
+
+.social li {
+    padding: 5px;
+    margin: 5px;
+}
